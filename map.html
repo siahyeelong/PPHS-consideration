@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e637f598973b7a247c29fff8df90ed18 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e637f598973b7a247c29fff8df90ed18" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e637f598973b7a247c29fff8df90ed18 = L.map(
+                "map_e637f598973b7a247c29fff8df90ed18",
+                {
+                    center: [1.347748125, 103.82048260208335],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_42dc1c551a0ca71d1a5c5ca2b97a77f5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_42dc1c551a0ca71d1a5c5ca2b97a77f5.addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var marker_1c11ec72585fe0107679f73dc6bcc59e = L.marker(
+                [1.3303742, 103.9352001],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_0e8136ba20078915c73048e0e3d74ed6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1c11ec72585fe0107679f73dc6bcc59e.setIcon(icon_0e8136ba20078915c73048e0e3d74ed6);
+        
+    
+            marker_1c11ec72585fe0107679f73dc6bcc59e.bindTooltip(
+                `<div>
+                     Address: Blk 113 Bedok North Street 2<br>2 Rooms [$500]: 1<br>3 Rooms [$700]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Bedok Reservoir MRT Station<br>Time to MRT: 11.983333333333333 mins<br>Time to RP: 43.9 mins<br>Site Expiry: 4Q 2028<br>Months to Expiry: 47<br>Town: Bedok<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f1508bcfec6aa525f48deaf1b177b93 = L.marker(
+                [1.3327608, 103.9225565],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_d911989ebb19b1a69115a7aef7a74376 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8f1508bcfec6aa525f48deaf1b177b93.setIcon(icon_d911989ebb19b1a69115a7aef7a74376);
+        
+    
+            marker_8f1508bcfec6aa525f48deaf1b177b93.bindTooltip(
+                `<div>
+                     Address: Blk 556 Bedok North Street 3<br>2 Rooms [$500]: 1<br>3 Rooms [$700]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Bedok North MRT Station<br>Time to MRT: 16.083333333333332 mins<br>Time to RP: 46.78333333333333 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Bedok<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c81884ce06a63d31a4293d650fca41e = L.marker(
+                [1.3594724, 103.7405954],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_086ee74fc77f6a3660527f43bc6c3d7c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0c81884ce06a63d31a4293d650fca41e.setIcon(icon_086ee74fc77f6a3660527f43bc6c3d7c);
+        
+    
+            marker_0c81884ce06a63d31a4293d650fca41e.bindTooltip(
+                `<div>
+                     Address: Blk 435A Bukit Batok West Avenue 5<br>2 Rooms [$500]: 3<br>3 Rooms [$700]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Bukit Gombak MRT Station<br>Time to MRT: 21.833333333333332 mins<br>Time to RP: 54.15 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Bukit Batok<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7f42f22f81411cc60b3e72cda952654 = L.marker(
+                [1.3523528, 103.739896],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_4ba0a77f488122a9a1999422b73c8bf0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c7f42f22f81411cc60b3e72cda952654.setIcon(icon_4ba0a77f488122a9a1999422b73c8bf0);
+        
+    
+            marker_c7f42f22f81411cc60b3e72cda952654.bindTooltip(
+                `<div>
+                     Address: Blk 447A Bukit Batok West Avenue 9<br>2 Rooms [$500]: 1<br>3 Rooms [$700]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Bukit Batok MRT Station<br>Time to MRT: 23.25 mins<br>Time to RP: 55.78333333333333 mins<br>Site Expiry: 4Q 2028<br>Months to Expiry: 47<br>Town: Bukit Batok<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5032cc0bee6fd0c853551f452cd8daad = L.marker(
+                [1.2861643, 103.833021],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_038af952db42a31bef7606a14b2a01a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5032cc0bee6fd0c853551f452cd8daad.setIcon(icon_038af952db42a31bef7606a14b2a01a7);
+        
+    
+            marker_5032cc0bee6fd0c853551f452cd8daad.bindTooltip(
+                `<div>
+                     Address: Blk 1 Tiong Bahru Road<br>2 Rooms [$0]: 0<br>3 Rooms [$700]: 6<br>4 Rooms [$1500]: 7<br>Nearest MRT: Havelock MRT Station<br>Time to MRT: 2.05 mins<br>Time to RP: 23.716666666666665 mins<br>Site Expiry: 4Q 2026<br>Months to Expiry: 23<br>Town: Bukit Merah<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a684e8166f71976e6da5faceb464caa8 = L.marker(
+                [1.2861784, 103.8323089],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_fbc5be5c52001f8bcb8a9bca531f7f89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a684e8166f71976e6da5faceb464caa8.setIcon(icon_fbc5be5c52001f8bcb8a9bca531f7f89);
+        
+    
+            marker_a684e8166f71976e6da5faceb464caa8.bindTooltip(
+                `<div>
+                     Address: Blk 3 Tiong Bahru Road<br>2 Rooms [$0]: 0<br>3 Rooms [$700]: 1<br>4 Rooms [$1500]: 7<br>Nearest MRT: Havelock MRT Station<br>Time to MRT: 2.8833333333333333 mins<br>Time to RP: 22.9 mins<br>Site Expiry: 4Q 2027<br>Months to Expiry: 35<br>Town: Bukit Merah<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78b1769b68195cc35000171ff27634da = L.marker(
+                [1.2862519, 103.8316865],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_2e8687959661a343e9d55abbc99cb84c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78b1769b68195cc35000171ff27634da.setIcon(icon_2e8687959661a343e9d55abbc99cb84c);
+        
+    
+            marker_78b1769b68195cc35000171ff27634da.bindTooltip(
+                `<div>
+                     Address: Blk 5 Tiong Bahru Road<br>2 Rooms [$0]: 0<br>3 Rooms [$700]: 2<br>4 Rooms [$1500]: 5<br>Nearest MRT: Havelock MRT Station<br>Time to MRT: 4.2 mins<br>Time to RP: 22.533333333333335 mins<br>Site Expiry: 4Q 2027<br>Months to Expiry: 35<br>Town: Bukit Merah<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a68e69b1929426a70c2d0191ece9ac1c = L.marker(
+                [1.2861582, 103.831045],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_45763489a788e5fcf6084f5185a36c30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a68e69b1929426a70c2d0191ece9ac1c.setIcon(icon_45763489a788e5fcf6084f5185a36c30);
+        
+    
+            marker_a68e69b1929426a70c2d0191ece9ac1c.bindTooltip(
+                `<div>
+                     Address: Blk 7 Tiong Bahru Road<br>2 Rooms [$0]: 0<br>3 Rooms [$700]: 4<br>4 Rooms [$1500]: 3<br>Nearest MRT: Havelock MRT Station<br>Time to MRT: 5.15 mins<br>Time to RP: 21.516666666666666 mins<br>Site Expiry: 4Q 2027<br>Months to Expiry: 35<br>Town: Bukit Merah<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06cf08ccab0dd87c0f49a394d555f545 = L.marker(
+                [1.2862205, 103.8304341],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_a79acadd2b2570697b7762e0871b0eb3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_06cf08ccab0dd87c0f49a394d555f545.setIcon(icon_a79acadd2b2570697b7762e0871b0eb3);
+        
+    
+            marker_06cf08ccab0dd87c0f49a394d555f545.bindTooltip(
+                `<div>
+                     Address: Blk 9 Tiong Bahru Road<br>2 Rooms [$0]: 0<br>3 Rooms [$700]: 4<br>4 Rooms [$1500]: 4<br>Nearest MRT: Tiong Bahru MRT Station<br>Time to MRT: 6.033333333333333 mins<br>Time to RP: 20.6 mins<br>Site Expiry: 4Q 2027<br>Months to Expiry: 35<br>Town: Bukit Merah<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f3df42fffbe919d604a6febdc4338e6 = L.marker(
+                [1.2724045, 103.8209202],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_fc53386a25687e5b7ad7c6c83cfbbca2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9f3df42fffbe919d604a6febdc4338e6.setIcon(icon_fc53386a25687e5b7ad7c6c83cfbbca2);
+        
+    
+            marker_9f3df42fffbe919d604a6febdc4338e6.bindTooltip(
+                `<div>
+                     Address: Blk 31 Telok Blangah Rise<br>2 Rooms [$0]: 0<br>3 Rooms [$700]: 1<br>4 Rooms [$1500]: 0<br>Nearest MRT: Harbourfront MRT Station<br>Time to MRT: 0.0 mins<br>Time to RP: 40.21666666666667 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Bukit Merah<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fdd06e5f3fd987fc1e06dd4d2b31786a = L.marker(
+                [1.2875387, 103.8135205],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_4d101abaadb7a1e11a1a0f48b233ae66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fdd06e5f3fd987fc1e06dd4d2b31786a.setIcon(icon_4d101abaadb7a1e11a1a0f48b233ae66);
+        
+    
+            marker_fdd06e5f3fd987fc1e06dd4d2b31786a.bindTooltip(
+                `<div>
+                     Address: Blk 55 Lengkok Bahru<br>2 Rooms [$0]: 0<br>3 Rooms [$700]: 1<br>4 Rooms [$1500]: 0<br>Nearest MRT: Redhill MRT Station<br>Time to MRT: 5.95 mins<br>Time to RP: 22.683333333333334 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Bukit Merah<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b9b87eafed117479219c87db1ae6e1f = L.marker(
+                [1.2861046, 103.8048371],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_a4c1984e99dd7b5e3f931a9e885991b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1b9b87eafed117479219c87db1ae6e1f.setIcon(icon_a4c1984e99dd7b5e3f931a9e885991b2);
+        
+    
+            marker_1b9b87eafed117479219c87db1ae6e1f.bindTooltip(
+                `<div>
+                     Address: Blk 119 Bukit Merah Lane 1<br>2 Rooms [$0]: 0<br>3 Rooms [$700]: 1<br>4 Rooms [$1500]: 0<br>Nearest MRT: Queenstown MRT Station<br>Time to MRT: 19.866666666666667 mins<br>Time to RP: 38.8 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Bukit Merah<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b9f4e756393d95cf300b1edbbda70c7 = L.marker(
+                [1.3739801, 103.7449757],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_aef5100ab1a70b0b842ab1af45db9351 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6b9f4e756393d95cf300b1edbbda70c7.setIcon(icon_aef5100ab1a70b0b842ab1af45db9351);
+        
+    
+            marker_6b9f4e756393d95cf300b1edbbda70c7.bindTooltip(
+                `<div>
+                     Address: Blk 813A Choa Chu Kang Avenue 7<br>2 Rooms [$400]: 1<br>3 Rooms [$600]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Keat Hong LRT Station<br>Time to MRT: 12.833333333333334 mins<br>Time to RP: 65.65 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Choa Chu Kang<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25dcc1d1fabd76c0ff295d2eb56e3ce4 = L.marker(
+                [1.3138146, 103.7593117],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_c050ed2defe7efd122c9e3926957736c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_25dcc1d1fabd76c0ff295d2eb56e3ce4.setIcon(icon_c050ed2defe7efd122c9e3926957736c);
+        
+    
+            marker_25dcc1d1fabd76c0ff295d2eb56e3ce4.bindTooltip(
+                `<div>
+                     Address: Blk 501 West Coast Drive<br>2 Rooms [$400]: 0<br>3 Rooms [$900]: 1<br>4 Rooms [$0]: 0<br>Nearest MRT: Clementi MRT Station<br>Time to MRT: 18.45 mins<br>Time to RP: 43.11666666666667 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Clementi<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f4e13544821133cee1ecbd044380004 = L.marker(
+                [1.3112025, 103.8976789],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_ef1e9d2aaddc2862565fcf4f9dbd2d2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0f4e13544821133cee1ecbd044380004.setIcon(icon_ef1e9d2aaddc2862565fcf4f9dbd2d2b);
+        
+    
+            marker_0f4e13544821133cee1ecbd044380004.bindTooltip(
+                `<div>
+                     Address: Blk 1 Haig Road<br>2 Rooms [$550]: 0<br>3 Rooms [$800]: 1<br>4 Rooms [$0]: 0<br>Nearest MRT: Paya Lebar MRT Station<br>Time to MRT: 15.983333333333333 mins<br>Time to RP: 37.06666666666667 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Geylang<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ffb7762f45c094d2851dbdcc119bd37 = L.marker(
+                [1.3117157, 103.8973995],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_eb4d26916432976ce6c849bcabebb31d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4ffb7762f45c094d2851dbdcc119bd37.setIcon(icon_eb4d26916432976ce6c849bcabebb31d);
+        
+    
+            marker_4ffb7762f45c094d2851dbdcc119bd37.bindTooltip(
+                `<div>
+                     Address: Blk 3 Haig Road<br>2 Rooms [$550]: 0<br>3 Rooms [$800]: 1<br>4 Rooms [$0]: 0<br>Nearest MRT: Paya Lebar MRT Station<br>Time to MRT: 16.133333333333333 mins<br>Time to RP: 37.21666666666667 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Geylang<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c248820ba70a03963f2c41ac37ae2b1f = L.marker(
+                [1.3072781, 103.8834921],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_d39a7bff5eae12fcb7390f5e99cfb842 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c248820ba70a03963f2c41ac37ae2b1f.setIcon(icon_d39a7bff5eae12fcb7390f5e99cfb842);
+        
+    
+            marker_c248820ba70a03963f2c41ac37ae2b1f.bindTooltip(
+                `<div>
+                     Address: Blk 13 Old Airport Road<br>2 Rooms [$550]: 0<br>3 Rooms [$800]: 1<br>4 Rooms [$0]: 0<br>Nearest MRT: Mountbatten MRT Station<br>Time to MRT: 3.75 mins<br>Time to RP: 33.1 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Geylang<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30dae80da389f548cbb09e85ba63620a = L.marker(
+                [1.3106154, 103.8852978],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_c23ad19cd88f0433ce77de00b0954b0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_30dae80da389f548cbb09e85ba63620a.setIcon(icon_c23ad19cd88f0433ce77de00b0954b0c);
+        
+    
+            marker_30dae80da389f548cbb09e85ba63620a.bindTooltip(
+                `<div>
+                     Address: Blk 52 Cassia Crescent<br>2 Rooms [$550]: 0<br>3 Rooms [$800]: 2<br>4 Rooms [$0]: 0<br>Nearest MRT: Dakota MRT Station<br>Time to MRT: 9.733333333333333 mins<br>Time to RP: 35.916666666666664 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Geylang<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad32430e24d07aa77a73ff14eeea76b2 = L.marker(
+                [1.3658968, 103.8916128],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_3232ad1214d8eb0feb2766ee1ea7e628 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ad32430e24d07aa77a73ff14eeea76b2.setIcon(icon_3232ad1214d8eb0feb2766ee1ea7e628);
+        
+    
+            marker_ad32430e24d07aa77a73ff14eeea76b2.bindTooltip(
+                `<div>
+                     Address: Blk 25 Hougang Avenue 3<br>2 Rooms [$500]: 1<br>3 Rooms [$700]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Hougang MRT Station<br>Time to MRT: 12.666666666666666 mins<br>Time to RP: 52.71666666666667 mins<br>Site Expiry: 4Q 2028<br>Months to Expiry: 47<br>Town: Hougang<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d4d51f34fd41302c7d59c755324198a = L.marker(
+                [1.3653135, 103.894618],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_213e0e7c9094af6e0042fed340f40410 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9d4d51f34fd41302c7d59c755324198a.setIcon(icon_213e0e7c9094af6e0042fed340f40410);
+        
+    
+            marker_9d4d51f34fd41302c7d59c755324198a.bindTooltip(
+                `<div>
+                     Address: Blk 313 Hougang Avenue 5<br>2 Rooms [$500]: 0<br>3 Rooms [$700]: 3<br>4 Rooms [$0]: 0<br>Nearest MRT: Hougang MRT Station<br>Time to MRT: 16.783333333333335 mins<br>Time to RP: 56.03333333333333 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Hougang<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce921e2c8aabc41e8f360186010810d4 = L.marker(
+                [1.346127, 103.731934],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_2dee5cefe6d4902a6e9dd498cf55aae0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ce921e2c8aabc41e8f360186010810d4.setIcon(icon_2dee5cefe6d4902a6e9dd498cf55aae0);
+        
+    
+            marker_ce921e2c8aabc41e8f360186010810d4.bindTooltip(
+                `<div>
+                     Address: Blk 316 Hougang Avenue 5<br>2 Rooms [$500]: 0<br>3 Rooms [$700]: 4<br>4 Rooms [$0]: 0<br>Nearest MRT: Chinese Garden MRT Station<br>Time to MRT: 12.383333333333333 mins<br>Time to RP: 45.21666666666667 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Hougang<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_772c5c813fc0b8b8728ca0d0743350a3 = L.marker(
+                [1.3440115, 103.7108636],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_d746600a83ae670995f221bd2fd30e7f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_772c5c813fc0b8b8728ca0d0743350a3.setIcon(icon_d746600a83ae670995f221bd2fd30e7f);
+        
+    
+            marker_772c5c813fc0b8b8728ca0d0743350a3.bindTooltip(
+                `<div>
+                     Address: Blk 188 Boon Lay Drive<br>2 Rooms [$500]: 10<br>3 Rooms [$700]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Boon Lay MRT Station<br>Time to MRT: 17.733333333333334 mins<br>Time to RP: 57.6 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Jurong West<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2512622fce60959d3e99cbccd9379cfe = L.marker(
+                [1.3444806, 103.7114711],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_8671ee237aba01af3ebe4aaec472130c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2512622fce60959d3e99cbccd9379cfe.setIcon(icon_8671ee237aba01af3ebe4aaec472130c);
+        
+    
+            marker_2512622fce60959d3e99cbccd9379cfe.bindTooltip(
+                `<div>
+                     Address: Blk 189 Boon Lay Drive<br>2 Rooms [$500]: 0<br>3 Rooms [$700]: 24<br>4 Rooms [$0]: 0<br>Nearest MRT: Boon Lay MRT Station<br>Time to MRT: 22.116666666666667 mins<br>Time to RP: 59.06666666666667 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Jurong West<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_27102f987261cf9db839dfbf50286cf3 = L.marker(
+                [1.34527, 103.7120871],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_1bdf9b2a45dc40a3e1cb15efcac49124 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_27102f987261cf9db839dfbf50286cf3.setIcon(icon_1bdf9b2a45dc40a3e1cb15efcac49124);
+        
+    
+            marker_27102f987261cf9db839dfbf50286cf3.bindTooltip(
+                `<div>
+                     Address: Blk 190 Boon Lay Drive<br>2 Rooms [$500]: 0<br>3 Rooms [$700]: 9<br>4 Rooms [$0]: 0<br>Nearest MRT: Lakeside MRT Station<br>Time to MRT: 17.266666666666666 mins<br>Time to RP: 55.083333333333336 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Jurong West<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e69171b2125a993a7313af3f6d30f48 = L.marker(
+                [1.344179, 103.7124931],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_3c544c24ce07a5d878824ba3f11e4cc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0e69171b2125a993a7313af3f6d30f48.setIcon(icon_3c544c24ce07a5d878824ba3f11e4cc0);
+        
+    
+            marker_0e69171b2125a993a7313af3f6d30f48.bindTooltip(
+                `<div>
+                     Address: Blk 191 Boon Lay Drive<br>2 Rooms [$500]: 41<br>3 Rooms [$700]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Lakeside MRT Station<br>Time to MRT: 16.366666666666667 mins<br>Time to RP: 54.18333333333333 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Jurong West<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_919266caca70e201ec24425c441dec80 = L.marker(
+                [1.3408191, 103.6933381],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_bf337f2c16f3eddbef0b2e12b372efc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_919266caca70e201ec24425c441dec80.setIcon(icon_bf337f2c16f3eddbef0b2e12b372efc6);
+        
+    
+            marker_919266caca70e201ec24425c441dec80.bindTooltip(
+                `<div>
+                     Address: Blk 967A Jurong West Street 93<br>2 Rooms [$500]: 3<br>3 Rooms [$700]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Pioneer MRT Station<br>Time to MRT: 15.2 mins<br>Time to RP: 53.43333333333333 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Jurong West<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4c0f27ed72a151d0f1d54ac26d9b598 = L.marker(
+                [1.3410018, 103.6930411],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_ec4799d8a1d2172a2d75a74b5cdae18d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f4c0f27ed72a151d0f1d54ac26d9b598.setIcon(icon_ec4799d8a1d2172a2d75a74b5cdae18d);
+        
+    
+            marker_f4c0f27ed72a151d0f1d54ac26d9b598.bindTooltip(
+                `<div>
+                     Address: Blk 967B Jurong West Street 93<br>2 Rooms [$500]: 1<br>3 Rooms [$700]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Pioneer MRT Station<br>Time to MRT: 15.383333333333333 mins<br>Time to RP: 53.61666666666667 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Jurong West<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45f1e168f0d6836f220cfc2be69acb59 = L.marker(
+                [1.3236278, 103.8592368],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_69d6045c655edb064d36051234af082e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_45f1e168f0d6836f220cfc2be69acb59.setIcon(icon_69d6045c655edb064d36051234af082e);
+        
+    
+            marker_45f1e168f0d6836f220cfc2be69acb59.bindTooltip(
+                `<div>
+                     Address: Blk 7 St. George's Lane<br>2 Rooms [$550]: 1<br>3 Rooms [$800]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Boon Keng MRT Station<br>Time to MRT: 11.983333333333333 mins<br>Time to RP: 39.15 mins<br>Site Expiry: 4Q 2028<br>Months to Expiry: 47<br>Town: Kallang<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fa6d26f0aca445fbf01ad8c65290bc8 = L.marker(
+                [1.32269, 103.8662772],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_e8e6075389d89909e7d8a5849e7de21d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4fa6d26f0aca445fbf01ad8c65290bc8.setIcon(icon_e8e6075389d89909e7d8a5849e7de21d);
+        
+    
+            marker_4fa6d26f0aca445fbf01ad8c65290bc8.bindTooltip(
+                `<div>
+                     Address: Blk 45 Bendemeer Road<br>2 Rooms [$550]: 0<br>3 Rooms [$800]: 1<br>4 Rooms [$0]: 0<br>Nearest MRT: Geylang Bahru MRT Station<br>Time to MRT: 13.283333333333333 mins<br>Time to RP: 38.166666666666664 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Kallang<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a5eef88c4b71c86670fa963a3fc0e07 = L.marker(
+                [1.3034321, 103.7831183],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_4caafda39cca5f778a8a50163b7e1032 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9a5eef88c4b71c86670fa963a3fc0e07.setIcon(icon_4caafda39cca5f778a8a50163b7e1032);
+        
+    
+            marker_9a5eef88c4b71c86670fa963a3fc0e07.bindTooltip(
+                `<div>
+                     Address: Blk 4 Dover Road<br>2 Rooms [$550]: 1<br>3 Rooms [$800]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: One-North MRT Station<br>Time to MRT: 11.866666666666667 mins<br>Time to RP: 38.88333333333333 mins<br>Site Expiry: 4Q 2028<br>Months to Expiry: 47<br>Town: Queenstown<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f36f53df9a306eea98f51b57eb482422 = L.marker(
+                [1.4482, 103.83257],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_08224b16ee48aa094ffd1c74445540fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f36f53df9a306eea98f51b57eb482422.setIcon(icon_08224b16ee48aa094ffd1c74445540fd);
+        
+    
+            marker_f36f53df9a306eea98f51b57eb482422.bindTooltip(
+                `<div>
+                     Address: Blk 106A Canberra Street<br>2 Rooms [$400]: 1<br>3 Rooms [$0]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Canberra MRT Station<br>Time to MRT: 13.533333333333333 mins<br>Time to RP: 52.21666666666667 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Sembawang<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_392231f753ff257042bc6c3ecedf219b = L.marker(
+                [1.454509, 103.8141623],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_288844d09d284d4bfcf164d3db76185b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_392231f753ff257042bc6c3ecedf219b.setIcon(icon_288844d09d284d4bfcf164d3db76185b);
+        
+    
+            marker_392231f753ff257042bc6c3ecedf219b.bindTooltip(
+                `<div>
+                     Address: Blk 462 Sembawang Drive<br>2 Rooms [$400]: 3<br>3 Rooms [$0]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Sembawang MRT Station<br>Time to MRT: 15.233333333333333 mins<br>Time to RP: 57.21666666666667 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Sembawang<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3e45f7675c19623ad86b092a624d415 = L.marker(
+                [1.3908047, 103.9092439],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_e57b59323eba2685f58ca9eeb445b27b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c3e45f7675c19623ad86b092a624d415.setIcon(icon_e57b59323eba2685f58ca9eeb445b27b);
+        
+    
+            marker_c3e45f7675c19623ad86b092a624d415.bindTooltip(
+                `<div>
+                     Address: Blk 182 Rivervale Crescent<br>2 Rooms [$400]: 3<br>3 Rooms [$0]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Rumbia LRT Station<br>Time to MRT: 8.083333333333334 mins<br>Time to RP: 60.21666666666667 mins<br>Site Expiry: 4Q 2028<br>Months to Expiry: 47<br>Town: Sengkang<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb671eac3140074e8c1c8f7b036d5563 = L.marker(
+                [1.3929492, 103.8865103],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_9365dc980f4c2ac76a070a4978b94a58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bb671eac3140074e8c1c8f7b036d5563.setIcon(icon_9365dc980f4c2ac76a070a4978b94a58);
+        
+    
+            marker_bb671eac3140074e8c1c8f7b036d5563.bindTooltip(
+                `<div>
+                     Address: Blk 350 Anchorvale Road<br>2 Rooms [$400]: 1<br>3 Rooms [$0]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Tongkang LRT Station<br>Time to MRT: 7.816666666666666 mins<br>Time to RP: 59.6 mins<br>Site Expiry: 4Q 2028<br>Months to Expiry: 47<br>Town: Sengkang<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_418be51769fd83f949e01d6ecfe8deb6 = L.marker(
+                [1.3933007, 103.8720439],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_f93a7cbbb066968f2a9ff7c8428d5907 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_418be51769fd83f949e01d6ecfe8deb6.setIcon(icon_f93a7cbbb066968f2a9ff7c8428d5907);
+        
+    
+            marker_418be51769fd83f949e01d6ecfe8deb6.bindTooltip(
+                `<div>
+                     Address: Blk 463A Sengkang West Way<br>2 Rooms [$400]: 6<br>3 Rooms [$0]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Fernvale LRT Station<br>Time to MRT: 11.766666666666667 mins<br>Time to RP: 59.53333333333333 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Sengkang<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d06e904e14b985f6b9b4a5019b46e7c = L.marker(
+                [1.3928195, 103.8719515],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_96d5805ee7f6e68d7dd463f60d08f365 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2d06e904e14b985f6b9b4a5019b46e7c.setIcon(icon_96d5805ee7f6e68d7dd463f60d08f365);
+        
+    
+            marker_2d06e904e14b985f6b9b4a5019b46e7c.bindTooltip(
+                `<div>
+                     Address: Blk 463B Sengkang West Way<br>2 Rooms [$400]: 1<br>3 Rooms [$0]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Fernvale LRT Station<br>Time to MRT: 12.383333333333333 mins<br>Time to RP: 60.15 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Sengkang<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bff7d8cba7da49e2bb36367fe2bbcd79 = L.marker(
+                [1.3340046, 103.8798861],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_b757cf135c6421aa216259ed1359c096 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bff7d8cba7da49e2bb36367fe2bbcd79.setIcon(icon_b757cf135c6421aa216259ed1359c096);
+        
+    
+            marker_bff7d8cba7da49e2bb36367fe2bbcd79.bindTooltip(
+                `<div>
+                     Address: Blk 3 Upper Aljunied Lane<br>2 Rooms [$400]: 0<br>3 Rooms [$0]: 1<br>4 Rooms [$0]: 0<br>Nearest MRT: Mattar MRT Station<br>Time to MRT: 17.116666666666667 mins<br>Time to RP: 42.8 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Sengkang<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8a48dac72d12c4eddc4cee4eeac846c = L.marker(
+                [1.3380945, 103.8529281],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_65d5a108dadb8d5a0da65504fd73951a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e8a48dac72d12c4eddc4cee4eeac846c.setIcon(icon_65d5a108dadb8d5a0da65504fd73951a);
+        
+    
+            marker_e8a48dac72d12c4eddc4cee4eeac846c.bindTooltip(
+                `<div>
+                     Address: Blk 52 Lorong 6 Toa Payoh<br>2 Rooms [$550]: 1<br>3 Rooms [$800]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Braddell MRT Station<br>Time to MRT: 12.016666666666667 mins<br>Time to RP: 36.15 mins<br>Site Expiry: 4Q 2028<br>Months to Expiry: 47<br>Town: Toa Payoh<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ff67e41c02180ce9de973a6e6f8823f = L.marker(
+                [1.3359642, 103.8521325],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_5d4f7e8344463b0cea9331dc9aa518ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3ff67e41c02180ce9de973a6e6f8823f.setIcon(icon_5d4f7e8344463b0cea9331dc9aa518ac);
+        
+    
+            marker_3ff67e41c02180ce9de973a6e6f8823f.bindTooltip(
+                `<div>
+                     Address: Blk 63 Lorong 5 Toa Payoh<br>2 Rooms [$550]: 5<br>3 Rooms [$800]: 0<br>4 Rooms [$0]: 0<br>Nearest MRT: Toa Payoh MRT Station<br>Time to MRT: 12.216666666666667 mins<br>Time to RP: 32.016666666666666 mins<br>Site Expiry: 4Q 2028<br>Months to Expiry: 47<br>Town: Toa Payoh<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3d863e576eb603d781748db9a2ff8d2 = L.marker(
+                [1.334725, 103.853102],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_b018496c65f5383fcfb9bc24157f6643 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f3d863e576eb603d781748db9a2ff8d2.setIcon(icon_b018496c65f5383fcfb9bc24157f6643);
+        
+    
+            marker_f3d863e576eb603d781748db9a2ff8d2.bindTooltip(
+                `<div>
+                     Address: Blk 68 Lorong 5 Toa Payoh<br>2 Rooms [$550]: 0<br>3 Rooms [$800]: 1<br>4 Rooms [$0]: 0<br>Nearest MRT: Toa Payoh MRT Station<br>Time to MRT: 12.55 mins<br>Time to RP: 32.35 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Toa Payoh<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d7f90e9f471ac98ab3d3f57b70d6c73 = L.marker(
+                [1.3414985, 103.8463986],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_88591c316878b6c87764f4fe6b5712a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8d7f90e9f471ac98ab3d3f57b70d6c73.setIcon(icon_88591c316878b6c87764f4fe6b5712a0);
+        
+    
+            marker_8d7f90e9f471ac98ab3d3f57b70d6c73.bindTooltip(
+                `<div>
+                     Address: Blk 110 Lorong 1 Toa Payoh<br>2 Rooms [$550]: 0<br>3 Rooms [$800]: 1<br>4 Rooms [$0]: 0<br>Nearest MRT: Braddell MRT Station<br>Time to MRT: 5.866666666666666 mins<br>Time to RP: 30.166666666666668 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Toa Payoh<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ae947f68788d67cf68566c8d9da31a5 = L.marker(
+                [1.3404772, 103.8457645],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_ef0c0afbd17093cd58ae3e544c9435a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8ae947f68788d67cf68566c8d9da31a5.setIcon(icon_ef0c0afbd17093cd58ae3e544c9435a5);
+        
+    
+            marker_8ae947f68788d67cf68566c8d9da31a5.bindTooltip(
+                `<div>
+                     Address: Blk 116 Lorong 2 Toa Payoh<br>2 Rooms [$550]: 0<br>3 Rooms [$800]: 1<br>4 Rooms [$0]: 0<br>Nearest MRT: Braddell MRT Station<br>Time to MRT: 1.4666666666666666 mins<br>Time to RP: 25.2 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Toa Payoh<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c66c2ef8c33b08b8105f68955e15bb32 = L.marker(
+                [1.3317893, 103.8672346],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_b41a1308492b1203111f7ec02c9ed3cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c66c2ef8c33b08b8105f68955e15bb32.setIcon(icon_b41a1308492b1203111f7ec02c9ed3cd);
+        
+    
+            marker_c66c2ef8c33b08b8105f68955e15bb32.bindTooltip(
+                `<div>
+                     Address: Blk 146 Potong Pasir Avenue 1<br>2 Rooms [$550]: 0<br>3 Rooms [$800]: 1<br>4 Rooms [$0]: 0<br>Nearest MRT: Potong Pasir MRT Station<br>Time to MRT: 3.2333333333333334 mins<br>Time to RP: 33.88333333333333 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Toa Payoh<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba05f8636f43a55c330580fbebaf2244 = L.marker(
+                [1.4359905, 103.7725871],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_8f541541930ca4bdfed40c7851335d9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba05f8636f43a55c330580fbebaf2244.setIcon(icon_8f541541930ca4bdfed40c7851335d9d);
+        
+    
+            marker_ba05f8636f43a55c330580fbebaf2244.bindTooltip(
+                `<div>
+                     Address: Blk 144 Woodlands Street 13<br>2 Rooms [$400]: 0<br>3 Rooms [$600]: 0<br>4 Rooms [$800]: 11<br>Nearest MRT: Marsiling MRT Station<br>Time to MRT: 5.866666666666666 mins<br>Time to RP: 56.25 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Woodlands<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5376ee4e83e89fd44a827ba11698567 = L.marker(
+                [1.4357457, 103.7744021],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_e549800b365190de7dc017b4c3a678c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a5376ee4e83e89fd44a827ba11698567.setIcon(icon_e549800b365190de7dc017b4c3a678c7);
+        
+    
+            marker_a5376ee4e83e89fd44a827ba11698567.bindTooltip(
+                `<div>
+                     Address: Blk 147 Woodlands Street 13<br>2 Rooms [$400]: 0<br>3 Rooms [$600]: 0<br>4 Rooms [$800]: 2<br>Nearest MRT: Marsiling MRT Station<br>Time to MRT: 5.366666666666666 mins<br>Time to RP: 55.75 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Woodlands<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77e40cb12ce99e3304921f7aa35f557a = L.marker(
+                [1.4396436, 103.7785907],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_68020805379222e5f8be1fe749bde704 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_77e40cb12ce99e3304921f7aa35f557a.setIcon(icon_68020805379222e5f8be1fe749bde704);
+        
+    
+            marker_77e40cb12ce99e3304921f7aa35f557a.bindTooltip(
+                `<div>
+                     Address: Blk 180C Marsiling Road<br>2 Rooms [$400]: 1<br>3 Rooms [$600]: 0<br>4 Rooms [$800]: 0<br>Nearest MRT: Woodlands MRT Station<br>Time to MRT: 13.2 mins<br>Time to RP: 63.233333333333334 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Woodlands<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae7cda900100af16d9211a817e0375a6 = L.marker(
+                [1.4374105, 103.8044808],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_f0d1ae9aca77a42d89900af6a6845401 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae7cda900100af16d9211a817e0375a6.setIcon(icon_f0d1ae9aca77a42d89900af6a6845401);
+        
+    
+            marker_ae7cda900100af16d9211a817e0375a6.bindTooltip(
+                `<div>
+                     Address: Blk 693D Woodlands Avenue 6<br>2 Rooms [$400]: 1<br>3 Rooms [$600]: 0<br>4 Rooms [$800]: 0<br>Nearest MRT: Admiralty MRT Station<br>Time to MRT: 13.45 mins<br>Time to RP: 60.016666666666666 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Woodlands<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec3997db779fea280060a5a81bfc589a = L.marker(
+                [1.4465464, 103.8049077],
+                {}
+            ).addTo(map_e637f598973b7a247c29fff8df90ed18);
+        
+    
+            var icon_03ab150890f7b111914787d61ab277f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ec3997db779fea280060a5a81bfc589a.setIcon(icon_03ab150890f7b111914787d61ab277f3);
+        
+    
+            marker_ec3997db779fea280060a5a81bfc589a.bindTooltip(
+                `<div>
+                     Address: Blk 785A Woodlands Rise<br>2 Rooms [$400]: 1<br>3 Rooms [$600]: 0<br>4 Rooms [$800]: 0<br>Nearest MRT: Admiralty MRT Station<br>Time to MRT: 13.166666666666666 mins<br>Time to RP: 59.81666666666667 mins<br>Site Expiry: 1Q 2030<br>Months to Expiry: 62<br>Town: Woodlands<br>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
